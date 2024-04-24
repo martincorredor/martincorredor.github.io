@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Habilities = () => {
   return (
-    <div>Habilities</div>
-  )
-}
+    <div className="section" id="habilities">
+      Habilities
+    </div>
+  );
+};
 
-export default Habilities
+export default Habilities;
