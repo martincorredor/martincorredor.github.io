@@ -31,7 +31,9 @@ const About = () => {
             variants={fadeIn('left', 0.5)}
             initial="hidden"
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.3 }} className="flex-1">
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1"
+          >
             <h2 className="h2 text-accent">Un poco más sobre mí.</h2>
             <p className="mb-6">
               Soy <span className="text-gradient">Martin</span>, un hombre
@@ -48,11 +50,7 @@ const About = () => {
               aprendizaje. Soy perseverante y siempre busco dar el mejor
               rendimiento manteniendo una actitud positiva, optimista y alegre.
             </p>
-            <motion.div
-              variants={fadeIn('up', 0.6)}
-              initial="hidden"
-              whileInView={'show'}
-              viewport={{ once: false, amount: 0.7 }}
+            <div
               className="flex max-w-max gap-x-6 items-center mb-8
             mx-auto lg:mx-0"
             >
@@ -60,7 +58,7 @@ const About = () => {
               <a href="#" className="text-gradient btn-link">
                 Mi portafolio
               </a>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>

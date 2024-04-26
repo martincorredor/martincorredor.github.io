@@ -108,3 +108,7 @@
 .container-image img {
   background-image: linear-gradient(to top, #200c3d, transparent);
 }
+
+.projectCard {
+  border-radius: 20px;
+}
