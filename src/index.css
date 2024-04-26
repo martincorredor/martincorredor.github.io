@@ -70,7 +70,6 @@
   }
 }
 
-
 .nav {
   position: fixed;
   bottom: 2%;
@@ -101,3 +100,11 @@
   justify-content: center;
 }
 
+.container-image {
+  width: 100%;
+  position: relative;
+}
+
+.container-image img {
+  background-image: linear-gradient(to top, #200c3d, transparent);
+}

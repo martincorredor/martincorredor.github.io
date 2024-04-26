@@ -36,9 +36,14 @@ const Banner = () => {
               className="mb-6 text-[25px] lg:text-[30px] font-secondary 
               font-semibold uppercase leading-[1]"
             >
-              <span className=" text-white mr-2">I am a</span>
+              {/* <span className=" text-white mr-2">Soy</span> */}
               <TypeAnimation
-                sequence={['Developer', 2000, 'Designer', 2000]}
+                sequence={[
+                  'Desarrollador',
+                  2000,
+                  'Diseñador',
+                  2000,
+                ]}
                 speed={50}
                 className="text-accent"
                 wrapper="span"
@@ -52,9 +57,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Always looking to give the best performance while maintaining a
-              calm, optimistic and cheerful attitude. Remarkable communication
-              skills, and great enthusiasm for being in constant learning.
+              Desarrollador Frontend con mas de dos años de experiencia.
+              Apasionado en todo lo que hago, dispuesto siempre a enfrentar
+              nuevos desafíos. Amante por el uso de tecnologías web modernas
+              para hacer realidad ideas audaces.
             </motion.p>
             <motion.div
               variants={fadeIn('up', 0.6)}
@@ -64,9 +70,9 @@ const Banner = () => {
               className="flex max-w-max gap-x-6 items-center mb-8
             mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
+              <button className="btn btn-lg">Descargar CV</button>
               <a href="#" className="text-gradient btn-link">
-                My portfolio
+                Mi portafolio
               </a>
             </motion.div>
             {/* Socials */}
