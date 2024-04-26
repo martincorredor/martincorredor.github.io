@@ -2,9 +2,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
-      tertiary: 'Aldrich',
+      primary: 'Shadows+Into+Light',
+      secondary: 'Shadows+Into+Light',
+      tertiary: 'Shadows+Into+Light',
     },
     container: {
       padding: {
@@ -24,8 +24,8 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
-        about: "url('./assets/about.png')",
-        services: "url('./assets/services.png')",
+        about: "url('./assets/about.jpg')",
+        services: "url('./assets/services.jpg')",
       },
     },
   },
