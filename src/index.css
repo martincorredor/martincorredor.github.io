@@ -111,4 +111,13 @@
 
 .projectCard {
   border-radius: 20px;
+  height: 40vh;
+}
+
+/* section {
+  max-height: 100vh;
+} */
+
+.formContainer {
+  border-radius: 20px;
 }

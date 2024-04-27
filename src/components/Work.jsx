@@ -18,6 +18,7 @@ const Work = () => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.3 }}
+              className='lg:h-[40vh]'
             >
               <h2 className="h2 leading-tight text-accent">
                 Mis últimos proyectos
@@ -29,7 +30,7 @@ const Work = () => {
                 exercitationem numquam. Temporibus deleniti labore incidunt
                 libero.
               </p>
-              <buttom className="btn btn-lg">Ver todos</buttom>
+              <button className="btn btn-lg">Ver todos</button>
             </motion.div>
             {/* Spotify */}
             <motion.div
@@ -67,7 +68,7 @@ const Work = () => {
               </div>
             </motion.div>
           </div>
-          <div className="flex-1 flex flex-col gap-y-10 lg:mt-24">
+          <div className="flex-1 flex flex-col gap-y-10 lg:relative ">
             {/* AirBnB */}
             <motion.div
               variants={fadeIn('left', 0.7)}
