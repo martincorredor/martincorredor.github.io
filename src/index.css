@@ -121,3 +121,7 @@
 .formContainer {
   border-radius: 20px;
 }
+
+.pointer {
+  cursor: pointer;
+}

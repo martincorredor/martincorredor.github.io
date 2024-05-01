@@ -79,7 +79,11 @@ const Banner = () => {
               >
                 Descargar CV
               </a>
-              <Link className="text-gradient btn-link" to="work" smooth={true}>
+              <Link
+                className="text-gradient btn-link pointer"
+                to="work"
+                smooth={true}
+              >
                 Mi portafolio
               </Link>
             </motion.div>

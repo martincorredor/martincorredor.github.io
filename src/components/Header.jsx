@@ -11,7 +11,7 @@ const Header = () => {
             <img className="w-[120px]" src={logo} alt=""></img>
           </a>
           <Link
-            className="content-center btn-link btn btn-sm"
+            className="content-center btn-link btn btn-sm pointer"
             to="contact"
             smooth={true}
           >
