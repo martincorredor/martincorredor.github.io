@@ -7,6 +7,7 @@ import Habilities from './components/Habilities';
 import Nav from './components/Nav';
 import Work from './components/Work';
 import About from './components/About';
+import NavMenu from './components/NavMenu';
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
       {/* <Habilities /> */}
       <Work />
       <Contact />
-      <div className='h-[4000px]'></div>
+      {/* <div className='h-[4000px]'></div> */}
     </div>
   );
 };

@@ -18,7 +18,7 @@ const Work = () => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.3 }}
-              className='lg:h-[40vh]'
+              className="lg:h-[40vh]"
             >
               <h2 className="h2 leading-tight text-accent">
                 Mis últimos proyectos
@@ -30,7 +30,14 @@ const Work = () => {
                 exercitationem numquam. Temporibus deleniti labore incidunt
                 libero.
               </p>
-              <button className="btn btn-lg">Ver todos</button>
+              <a
+                className="btn btn-lg py-2"
+                href="https://github.com/martincorredor?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver todos
+              </a>
             </motion.div>
             {/* Spotify */}
             <motion.div

@@ -5,8 +5,10 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { Link } from 'react-scroll';
 
 const Banner = () => {
+  // const pdf = pdfFile;
   return (
     <section
       className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
@@ -38,12 +40,7 @@ const Banner = () => {
             >
               {/* <span className=" text-white mr-2">Soy</span> */}
               <TypeAnimation
-                sequence={[
-                  'Desarrollador',
-                  2000,
-                  'Diseñador',
-                  2000,
-                ]}
+                sequence={['Desarrollador', 2000, 'Diseñador', 2000]}
                 speed={50}
                 className="text-accent"
                 wrapper="span"
@@ -70,10 +67,21 @@ const Banner = () => {
               className="flex max-w-max gap-x-6 items-center mb-8
             mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Descargar CV</button>
-              <a href="#" className="text-gradient btn-link">
-                Mi portafolio
+              {/* <button className="btn btn-lg">
+                <a href="./dev_MartinCorredor_CV.pdf" download>
+                  Descargar CV
+                </a>
+              </button> */}
+              <a
+                className="btn btn-lg content-center"
+                href="./dev_MartinCorredor_CV.pdf"
+                download
+              >
+                Descargar CV
               </a>
+              <Link className="text-gradient btn-link" to="work" smooth={true}>
+                Mi portafolio
+              </Link>
             </motion.div>
             {/* Socials */}
             <motion.div
@@ -84,13 +92,25 @@ const Banner = () => {
               className="flex text-[20px] gap-x-6 max-w-max mx-auto
             lg:mx-0"
             >
-              <a href="#">
+              <a
+                href="https://github.com/martincorredor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub />
               </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/martin-corredor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedin />
               </a>
-              <a href="#">
+              <a
+                href="#"
+                // target="_blank"
+                // rel="noopener noreferrer"
+              >
                 <FaInstagram />
               </a>
             </motion.div>

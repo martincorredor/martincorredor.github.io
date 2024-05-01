@@ -4,6 +4,8 @@ import { useInView } from 'framer-motion';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import aboutImg from '../assets/aboutImg.png';
+import { Link } from 'react-scroll';
+
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -54,10 +56,13 @@ const About = () => {
               className="flex max-w-max gap-x-6 items-center mb-8
             mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Descargar CV</button>
-              <a href="#" className="text-gradient btn-link">
-                Mi portafolio
+              <a className="btn btn-lg content-center" href="./dev_MartinCorredor_CV.pdf" download>
+                Descargar CV
               </a>
+
+              <Link className="text-gradient btn-link" to="work" smooth={true}>
+                Mi portafolio
+              </Link>
             </div>
           </motion.div>
         </div>

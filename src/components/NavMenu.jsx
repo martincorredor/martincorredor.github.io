@@ -12,7 +12,7 @@ import BookmarkAddedRoundedIcon from '@mui/icons-material/BookmarkAddedRounded';
 const NavMenu = () => {
   
   return (
-    <Box className="navMenuItems">
+    <Box className="navMenuItems Z-100">
       <div className="navMenuItemContainer">
         <span className="navMenuTitle">Proyectos</span>
         <AutoAwesomeMotionRoundedIcon className="navMenuIcon" />
