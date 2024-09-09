@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-const Arrows = () => {
+const Arrows = ({showSlider}) => {
   return (
-    <div className='arrows'>
-        <button id="prev">{'<'}</button>
-        <button id="next">{'>'}</button>
+    <div className="arrows">
+      <button id="prev" onClick={() => showSlider('prev')}>
+        {'<'}
+      </button>
+      <button id="next" onClick={() => showSlider('next')}>
+        {'>'}
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Arrows
+export default Arrows;
