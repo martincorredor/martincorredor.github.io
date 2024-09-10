@@ -5,7 +5,6 @@ import Carousel from './components/Carousel';
 import Thumbnail from './components/Thumbnail';
 import Arrows from './components/Arrows';
 
-import lightGrey from './assets/lightGrey.png';
 import darkForest from './assets/darkForest.png';
 import darkForest2 from './assets/darkForest2.png';
 import darkForest3 from './assets/darkForest3.png';
