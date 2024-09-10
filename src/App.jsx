@@ -60,7 +60,7 @@ const App = () => {
               </div>
               <div className="buttons">
                 <button>Mi CV</button>
-                {/* <button>SUBSCRIBE</button> */}
+                <button>Contáctame</button>
               </div>
             </div>
           </div>

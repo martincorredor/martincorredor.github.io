@@ -17,12 +17,29 @@ header {
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 100;
+  /* background-color: #000; */
+  backdrop-filter: blur(10px);
+  /* backdrop-filter: opacity(50%); */
+  /* backdrop-filter: grayscale(60%); */
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 15px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 header a {
-  color: #eee;
-  margin-right: 40px;
+  color: #fff;
+  /* color: #f1683a; */
+  font-size: 1.3em;
+}
+
+.header-logo {
+  width: 70px;
 }
 
 /*--------------------------------- carousel --------------------------------------*/
@@ -46,7 +63,7 @@ header a {
 }
 .carousel .list .item .content {
   position: absolute;
-  top: 20%;
+  top: 15%;
   width: 1140px;
   max-width: 80%;
   left: 50%;
@@ -68,18 +85,19 @@ header a {
 }
 .carousel .list .item .topic {
   color: #f1683a;
+  font-size: 4em;
 }
 .carousel .list .item .buttons {
   display: grid;
   grid-template-columns: repeat(2, 130px);
   grid-template-rows: 40px;
-  gap: 5px;
+  gap: 15px;
   margin-top: 20px;
 }
 .carousel .list .item .buttons button {
   border: none;
   background-color: #eee;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-family: Poppins;
   font-weight: 500;
   cursor: pointer;
@@ -112,6 +130,7 @@ header a {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  border: solid 1px #545050;
 }
 .thumbnail .item .content {
   color: #fff;
@@ -314,5 +333,12 @@ header a {
   }
   .carousel .list .item .content .title {
     font-size: 30px;
+  }
+
+  nav {
+    gap: 5px;
+  }
+  nav a {
+    font-size: 1em;
   }
 }
