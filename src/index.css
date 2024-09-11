@@ -20,7 +20,10 @@ header {
   justify-content: space-between;
   position: relative;
   z-index: 100;
+  /* background-color: #000; */
   backdrop-filter: blur(10px);
+  /* backdrop-filter: opacity(50%); */
+  /* backdrop-filter: grayscale(60%); */
   background-color: rgba(0, 0, 0, 0.4);
   padding: 0 15px;
 }
@@ -106,10 +109,6 @@ header a {
   color: #eee;
 }
 
-.item.hidden {
-  display: none;
-}
-
 /*--------------------------------- thumbnail --------------------------------------*/
 .thumbnail {
   position: absolute;
@@ -125,7 +124,6 @@ header a {
   height: 220px;
   flex-shrink: 0;
   position: relative;
-  border-radius: 20px;
 }
 .thumbnail .item img {
   width: 100%;
@@ -184,10 +182,6 @@ header a {
   z-index: 1;
 }
 
-.item {
-  transition: opacity 0.5s ease;
-}
-
 /* animation text in first item */
 
 .carousel .list .item:nth-child(1) .content .author,
@@ -208,16 +202,16 @@ header a {
   }
 }
 .carousel .list .item:nth-child(1) .content .title {
-  animation-delay: 0.8s !important;
-}
-.carousel .list .item:nth-child(1) .content .topic {
-  animation-delay: 1s !important;
-}
-.carousel .list .item:nth-child(1) .content .des {
   animation-delay: 1.2s !important;
 }
-.carousel .list .item:nth-child(1) .content .buttons {
+.carousel .list .item:nth-child(1) .content .topic {
   animation-delay: 1.4s !important;
+}
+.carousel .list .item:nth-child(1) .content .des {
+  animation-delay: 1.6s !important;
+}
+.carousel .list .item:nth-child(1) .content .buttons {
+  animation-delay: 1.8s !important;
 }
 /* create animation when next click */
 .carousel.next .list .item:nth-child(1) img {
@@ -259,6 +253,31 @@ header a {
 @keyframes effectNext {
   from {
     transform: translateX(150px);
+  }
+}
+
+/* running time */
+
+.carousel .time {
+  position: absolute;
+  z-index: 1000;
+  width: 0%;
+  height: 3px;
+  background-color: #f1683a;
+  left: 0;
+  top: 0;
+}
+
+.carousel.next .time,
+.carousel.prev .time {
+  animation: runningTime 3s linear 1 forwards;
+}
+@keyframes runningTime {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
   }
 }
 
