@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <a href="#">
+        <a href="#about">
           {/* <img src={logo} className="header-logo" /> */}
           Martin
         </a>
