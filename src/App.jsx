@@ -47,8 +47,8 @@ const App = () => {
       <Header />
       <div className="carousel" ref={carouselRef}>
         <div className="list" ref={sliderRef}>
-          <div className="item">
-            <img src={darkForest} />
+          <div className="item" loading='lazy' >
+            <img src={darkForest} loading="lazy" />
             <div className="content">
               <div className="author">Hola, soy</div>
               <div className="title">MARTIN CORREDOR</div>
@@ -64,8 +64,8 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="item">
-            <img src={darkForest2} />
+          <div className="item" loading="lazy">
+            <img src={darkForest2} loading="lazy" />
             <div className="content">
               <div className="author">Conoce mi</div>
               <div className="title">TRAYECTORIA</div>
@@ -75,8 +75,8 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="item">
-            <img src={darkForest3} />
+          <div className="item" loading="lazy">
+            <img src={darkForest3} loading="lazy" />
             <div className="content">
               <div className="author">Conoce mis</div>
               <div className="title">HABILIDADES</div>
@@ -84,8 +84,8 @@ const App = () => {
               <div className="des">acá irán mis habilidades</div>
             </div>
           </div>
-          <div className="item">
-            <img src={darkForest4} />
+          <div className="item" loading="lazy">
+            <img src={darkForest4} loading="lazy" />
             <div className="content">
               <div className="author">Algunos de mis</div>
               <div className="title">PROYECTOS</div>
@@ -97,28 +97,28 @@ const App = () => {
         {/* list thumnail */}
         <div className="thumbnail" ref={thumbnailBorderRef}>
           <div className="item">
-            <img src={darkForest} />
+            <img src={darkForest} loading="lazy"/>
             <div className="content">
               <div className="title">SOBRE MÍ</div>
               {/* <div className="description">Description</div> */}
             </div>
           </div>
           <div className="item">
-            <img src={darkForest2} />
+            <img src={darkForest2}loading="lazy" />
             <div className="content">
               <div className="title">TRAYECTORIA</div>
               {/* <div className="description">Mi experiencia</div> */}
             </div>
           </div>
           <div className="item">
-            <img src={darkForest3} />
+            <img src={darkForest3} loading="lazy"/>
             <div className="content">
               <div className="title">HABILIDADES</div>
               {/* <div className="description">Description</div> */}
             </div>
           </div>
           <div className="item">
-            <img src={darkForest4} />
+            <img src={darkForest4} loading="lazy"/>
             <div className="content">
               <div className="title">PROYECTOS</div>
               {/* <div className="description">Description</div> */}

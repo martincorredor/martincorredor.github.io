@@ -20,12 +20,10 @@ header {
   justify-content: space-between;
   position: relative;
   z-index: 100;
-  /* background-color: #000; */
   backdrop-filter: blur(10px);
-  /* backdrop-filter: opacity(50%); */
-  /* backdrop-filter: grayscale(60%); */
   background-color: rgba(0, 0, 0, 0.4);
   padding: 0 15px;
+  border-radius: 0 0 10px 10px;
 }
 header nav {
   display: flex;
@@ -256,31 +254,6 @@ header a {
   }
 }
 
-/* running time */
-
-.carousel .time {
-  position: absolute;
-  z-index: 1000;
-  width: 0%;
-  height: 3px;
-  background-color: #f1683a;
-  left: 0;
-  top: 0;
-}
-
-.carousel.next .time,
-.carousel.prev .time {
-  animation: runningTime 3s linear 1 forwards;
-}
-@keyframes runningTime {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0;
-  }
-}
-
 /* prev click */
 
 .carousel.prev .list .item:nth-child(2) {
@@ -327,6 +300,8 @@ header a {
     opacity: 0;
   }
 }
+
+/* ----------------------- Small screen --------------------------- */
 @media screen and (max-width: 678px) {
   .carousel .list .item .content {
     padding-right: 0;
@@ -334,9 +309,15 @@ header a {
   .carousel .list .item .content .title {
     font-size: 30px;
   }
-
+  header {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
   nav {
     gap: 5px;
+    margin: 0 10px;
   }
   nav a {
     font-size: 1em;
