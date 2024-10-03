@@ -10,7 +10,6 @@ import darkForest from './assets/darkForest.png';
 import darkForest2 from './assets/darkForest2.png';
 import darkForest3 from './assets/darkForest3.png';
 import darkForest4 from './assets/darkForest4.png';
-import darkForest5 from './assets/darkForest5.png';
 import About from './components/About';
 import Experience from './components/Experience';
 import Habilities from './components/Habilities';
