@@ -1,5 +1,6 @@
 import React from 'react';
 import darkForest3 from '../assets/darkForest3.png';
+import Carousel3D from './Carousel3D';
 
 const Habilities = ({ thumbnail }) => {
   return thumbnail ? (
@@ -15,7 +16,9 @@ const Habilities = ({ thumbnail }) => {
       <div className="content">
         <div className="author">Conoce mis</div>
         <div className="title">HABILIDADES</div>
-        <div className="des">Acá irán mis habilidades</div>
+        <div className="des">
+          <Carousel3D />
+        </div>
       </div>
     </div>
   );
