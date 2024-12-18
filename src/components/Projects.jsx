@@ -1,5 +1,7 @@
 import React from 'react';
 import darkForest4 from '../assets/darkForest4.png';
+import Cards from './Cards';
+
 
 const Projects = ({ thumbnail }) => {
   return thumbnail ? (
@@ -15,7 +17,9 @@ const Projects = ({ thumbnail }) => {
       <div className="content">
         <div className="author">Algunos de mis</div>
         <div className="title">PROYECTOS</div>
-        <div className="des">Acá mostraré algunos de mis proyectos.</div>
+        <div className="des">
+          <Cards />{' '}
+        </div>
       </div>
     </div>
   );
