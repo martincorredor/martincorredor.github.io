@@ -15,7 +15,7 @@ const Habilities = ({ thumbnail }) => {
       <img src={darkForest3} alt="Dark Forest" />
       <div className="content">
         <div className="author">Conoce mis</div>
-        <div className="title">HABILIDADES</div>
+        <div className="title orangeText">HABILIDADES</div>
         <div className="des">
           <Carousel3D />
         </div>

@@ -434,33 +434,6 @@ header a {
   z-index: 2000;
 }
 
-/* ---------------------------- RESPONSIVE --------------------------------- */
-
-@media screen and (max-width: 678px) {
-  .carousel .list .item .content {
-    position: absolute;
-    top: 10%;
-    max-width: 95%;
-    padding-right: 0;
-  }
-  .carousel .list .item .content .title {
-    font-size: 30px;
-  }
-  header {
-    min-width: 100%;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
-  }
-  nav {
-    gap: 5px;
-    margin: 0 10px;
-  }
-  nav a {
-    font-size: 1em;
-  }
-}
-
 /* ------------------------------- HABILITIES ------------------------------------------- */
 .entireContent {
   margin: auto;
@@ -688,4 +661,307 @@ header a {
   padding: 5px 5px;
   color: #fff;
   text-decoration: none;
+}
+
+/* ---------------------------- RESPONSIVE --------------------------------- */
+
+@media screen and (max-width: 678px) {
+  .carousel .list .item .content {
+    position: absolute;
+    top: 10%;
+    max-width: 95%;
+    padding-right: 0;
+  }
+  .carousel .list .item .content .title {
+    font-size: 30px;
+  }
+  header {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  nav {
+    gap: 5px;
+    margin: 0 10px;
+  }
+  nav a {
+    font-size: 1em;
+  }
+
+  /* --------------------------- EXPERIENCE ------------------------------- */
+  .card {
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+    transition: max-height 2s ease, width 2s ease;
+    background-color: #000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.7;
+    z-index: -2;
+  }
+
+  .card.expanded {
+    width: 85vw;
+    min-height: max-content;
+    transition: all 2s;
+    opacity: 1;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .card-content {
+    opacity: 0;
+    transition: opacity 2s ease;
+  }
+
+  .card.expanded .card-content {
+    opacity: 1;
+  }
+
+  /* ------------------------------- Timeline ------------------------------------------ */
+
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: 55vh;
+    margin-top: 20px;
+  }
+
+  .dotted-line {
+    text-align: center;
+    width: 2px;
+    max-height: 100%;
+    display: none;
+  }
+
+  .timeline-items {
+    position: relative;
+    left: 10px;
+    max-width: 100vw;
+    min-width: 100vw;
+    height: 55vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .uptc-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 95%;
+    position: absolute;
+    left: 0px;
+    gap: 10px;
+  }
+
+  .uptc-icon {
+    position: relative;
+  }
+
+  .holberton-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 95%;
+    position: absolute;
+    left: 0px;
+    top: 10vh;
+    gap: 10px;
+  }
+
+  .holberton-icon {
+    position: relative;
+  }
+
+  .sunsquare-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 95%;
+    position: absolute;
+    left: 0px;
+    top: 20vh;
+    gap: 10px;
+  }
+
+  .sunsquare-icon {
+    position: relative;
+  }
+
+  .rappi-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 95%;
+    position: absolute;
+    left: 0px;
+    top: 30vh;
+    gap: 10px;
+  }
+
+  .rappi-icon {
+    position: relative;
+  }
+
+  /* ------------------------------- HABILITIES ------------------------------------------- */
+  .entireContent {
+    margin: auto;
+    margin-top: 20vh;
+    width: 200px;
+    perspective: 900px;
+    position: relative;
+    left: 20px;
+  }
+
+  .contentCarousel {
+    width: 80%;
+    height: 20vh;
+    position: absolute;
+    animation: rotateCarousel 17s infinite linear;
+    transform-style: preserve-3d;
+  }
+
+  .contentCarousel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+
+  .contentCarousel figure {
+    width: 15vw;
+    height: 12vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .contentCarousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(2) {
+    transform: rotateY(27deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(3) {
+    transform: rotateY(54deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(4) {
+    transform: rotateY(81deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(5) {
+    transform: rotateY(108deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(6) {
+    transform: rotateY(135deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(7) {
+    transform: rotateY(162deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(8) {
+    transform: rotateY(189deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(9) {
+    transform: rotateY(216deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(10) {
+    transform: rotateY(243deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(11) {
+    transform: rotateY(270deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(12) {
+    transform: rotateY(297deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(13) {
+    transform: rotateY(324deg) translateZ(180px);
+  }
+  .contentCarousel figure:nth-child(14) {
+    transform: rotateY(351deg) translateZ(180px);
+  }
+  .blackText {
+    color: #000;
+  }
+
+  .orangeText {
+    color: #f1683a;
+  }
+
+  /* ---------------------------------- PROJECTS --------------------------------------- */
+
+.projectCardsContainer {
+  width: 90%;
+  max-width: 100%;
+  height: 55vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 25px;
+}
+
+.projectCard {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: whitesmoke;
+  cursor: context-menu;
+  border-radius: 10px;
+  font-size: 0.6rem;
+}
+
+.projectCard:hover .projectCardImg {
+  transform: scale(1.1);
+}
+
+.projectCardContent {
+  bottom: -82%;
+}
+
+.projectCardTitle {
+  font-size: 0.8rem;
+}
+
+.projectCardTecContainer {
+  gap: 5px;
+}
+.projectCardBtn {
+  font-size: inherit;
+  height: 20px;
+}
+
+.projectCardBtn:hover {
+  background-color: #545050;
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.projectCardBtn a {
+  width: 100%;
+  height: 100%;
+  padding: 10px 5px;
+  color: #fff;
+  text-decoration: none;
+}
 }
