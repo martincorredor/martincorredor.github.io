@@ -8,6 +8,11 @@ import gitLogo from '../assets/logos/git.png';
 import nodeLogo from '../assets/logos/node.png';
 import typeScriptLogo from '../assets/logos/typeScript.png';
 import bootstrapLogo from '../assets/logos/bootstrap.png';
+import figmaLogo from '../assets/logos/figma.png';
+import svelteLogo from '../assets/logos/svelte.png';
+import materialUiLogo from '../assets/logos/materialUi.png';
+import sqlLogo from '../assets/logos/sql.png';
+import githubLogo from '../assets/logos/github.png';
 
 const Carousel3D = () => {
   const tecnologies = [
@@ -20,6 +25,11 @@ const Carousel3D = () => {
     { name: 'Git', image: gitLogo },
     { name: 'Node JS', image: nodeLogo },
     { name: 'Bootstrap', image: bootstrapLogo },
+    { name: 'Figma', image: figmaLogo },
+    { name: 'Svelte', image: svelteLogo },
+    { name: 'Material UI', image: materialUiLogo },
+    { name: 'Github', image: githubLogo },
+    // { name: 'SQL & NoSQL', image: sqlLogo },
   ];
 
   return (
@@ -27,8 +37,8 @@ const Carousel3D = () => {
       <div className="contentCarousel">
         {tecnologies.map((tech, index) => (
           <figure key={index} className="shadow">
-            <label className='contentCarouselTitle'>{tech.name}</label>
-            <img src={tech.image} alt={tech.name} className='techImage' />
+            <label className="contentCarouselTitle">{tech.name}</label>
+            <img src={tech.image} alt={tech.name} className="techImage" />
           </figure>
         ))}
       </div>

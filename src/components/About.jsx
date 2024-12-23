@@ -2,6 +2,8 @@ import React from 'react';
 import darkForest from '../assets/darkForest.png';
 
 const About = ({ thumbnail }) => {
+  const whatsappNumber = '573224682353';
+
   return thumbnail ? (
     <div className="item">
       <img src={darkForest} alt="Dark Forest" />
@@ -10,10 +12,6 @@ const About = ({ thumbnail }) => {
       </div>
     </div>
   ) : (
-    // <div className="section">
-    //   <img src={darkForest} alt="Dark Forest" />
-    //   <div className="section-content">About</div>
-    // </div>
     <div className="item">
       <img src={darkForest} alt="Dark Forest" />
       <div className="content">
@@ -26,8 +24,24 @@ const About = ({ thumbnail }) => {
           contactarme.
         </div>
         <div className="buttons">
-          <button>Mi CV</button>
-          <button>Contáctame</button>
+          <button>
+            <a
+              href="https://drive.google.com/file/d/1LGfo2Yn57NV1Bvz_dKvymsK03f0FYXZu/view?usp=sharing"
+              target="_blank"
+              className="buttonLink"
+            >
+              Mi CV
+            </a>
+          </button>
+          <button className="contactButton">
+            <a
+              href={`https://wa.me/${whatsappNumber}?text=${''}`}
+              target="_blank"
+              className="buttonLink"
+            >
+              Contáctame
+            </a>
+          </button>
         </div>
       </div>
     </div>

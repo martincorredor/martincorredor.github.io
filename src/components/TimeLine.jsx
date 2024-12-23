@@ -7,32 +7,32 @@ import ComputerIcon from '@mui/icons-material/Computer';
 const experiences = {
   uptc: {
     title: 'UPTC',
-    year: 2014,
+    year: 'Ene 2014 - Dic 2019',
     place: 'Tunja, Colombia',
     details:
-      'Estudié Ingeniería Civil en la Universidad Pedagógica y Tecnológica de Colombia.',
+      'Estudié Ingeniería Civil en la Universidad Pedagógica y Tecnológica de Colombia, desarrollé habilidades analíticas, resolución de problemas y trabajo en equipo.',
     type: 'study',
   },
   holberton: {
     title: 'Holberton School',
-    year: 2020,
+    year: 'Ene 2020 - Abr 2022',
     place: 'Bogotá, Colombia',
-    details: 'Estudié Desarrollo de Software Full Stack.',
+    details: 'Estudié Desarrollo de Software Full Stack. Adquirí experiencia práctica en tecnologías como React, JavaScript, Python, HTML, CSS y metodologías ágiles, así como conocimientos en SQL, NoSQL, CI/CD, C. ',
     type: 'study',
   },
   sunsquare: {
     title: 'Sunsquare',
-    year: 2021,
+    year: 'Mar 2021 - Abr 2022',
     place: 'Remoto',
-    details: 'Trabajé como Desarrollador Full Stack.',
+    details: 'Desarrollé la interfaz de una aplicación web de publicación de anuncios de alquiler, utilizando tecnologías como React, JavaScript, HTML y CSS. Fortalecí habilidades de trabajo en equipo, liderazgo y control de versiones, asegurando entregables de calidad y contribuyendo al éxito del proyecto en un entorno remoto.',
     type: 'work',
   },
   rappi: {
     title: 'Rappi',
-    year: 2022,
+    year: 'May 2022 - Abr 2024',
     place: 'Bogotá, Colombia',
     details:
-      'Participé en la implementación de los portales "Portal Partners" y "Partners Manager" para la vertical de Restaurantes, gestionando campañas publicitarias en la aplicación. Transformé diseños de Figma en implementaciones funcionales con React, JavaScript, TypeScript, HTML, CSS y Material UI. Implementé hooks para la integración de APIs backend, desarrollé diseños responsive y colaboré en Sprints bajo Metodologías Ágiles, aportando soluciones y resolviendo desafíos técnicos junto al equipo.',
+      'Participé en la creación de portales como "Portal Partners" y "Partners Manager", transformando diseños en Figma en interfaces funcionales con React, TypeScript, y Material UI. Implementé hooks para integrar servicios backend mediante APIs, desarrollé diseños responsivos para diferentes dispositivos y colaboré en un entorno ágil (SCRUM), aportando soluciones técnicas y optimizando la experiencia del usuario.',
     type: 'work',
   },
 };
@@ -49,6 +49,7 @@ const Timeline = () => {
           <ExpandingCard
             title={experiences.uptc.title}
             description={experiences.uptc.details}
+            year={experiences.uptc.year}
           />
         </div>
         <div className="holberton-item">
@@ -56,6 +57,7 @@ const Timeline = () => {
           <ExpandingCard
             title={experiences.holberton.title}
             description={experiences.holberton.details}
+            year={experiences.holberton.year}
           />
         </div>
         <div className="sunsquare-item">
@@ -63,6 +65,7 @@ const Timeline = () => {
           <ExpandingCard
             title={experiences.sunsquare.title}
             description={experiences.sunsquare.details}
+            year={experiences.sunsquare.year}
           />
         </div>
         <div className="rappi-item">
@@ -70,6 +73,7 @@ const Timeline = () => {
           <ExpandingCard
             title={experiences.rappi.title}
             description={experiences.rappi.details}
+            year={experiences.rappi.year}
           />
         </div>
       </div>

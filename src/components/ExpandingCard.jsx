@@ -19,6 +19,7 @@ const ExpandingCard = ({title, year, company, description}) => {
     >
       <h3 className="card-title">{title || 'card title'}</h3>
       <div className="card-content">
+        <p>{year || 'year'}</p>
         <p>{description || 'card description'}</p>
       </div>
     </div>

@@ -8,39 +8,56 @@ import gitLogo from '../assets/logos/git.png';
 import nodeLogo from '../assets/logos/node.png';
 import typeScriptLogo from '../assets/logos/typeScript.png';
 import bootstrapLogo from '../assets/logos/bootstrap.png';
+import figmaLogo from '../assets/logos/figma.png';
+import svelteLogo from '../assets/logos/svelte.png';
+import materialUiLogo from '../assets/logos/materialUi.png';
+import sqlLogo from '../assets/logos/sql.png';
+import githubLogo from '../assets/logos/github.png';
+import ecommerceImg from '../assets/eCommerce.png';
+import gaitaCrafts from '../assets/gaitaCrafts.png';
+import boldImg from '../assets/boldDashboard.png';
+import spotifyImg from '../assets/spotify.png';
+import boldLogo from '../assets/bold.png';
 
 const projects = [
   {
     title: 'Gaita Crafts',
-    tec: [reactLogo, htmlLogo, cssLogo, jsLogo, gitLogo],
+    tec: [reactLogo, htmlLogo, cssLogo, jsLogo, gitLogo, githubLogo],
     copy: 'Sitio oficial de GaitaCrafts donde se exponen en modo de galería productos, donde el usuario puede comunicarse directamente vía WhatsApp para su compra.',
-    button: 'Visitar',
-    image:
-      'https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max',
+    site: 'https://gaitacrafts.com/',
+    code: 'https://github.com/martincorredor/my-crafts.git',
+    image: gaitaCrafts,
   },
   {
     title: 'Bold Dashboard',
-    tec: [nodeLogo, typeScriptLogo],
+    tec: [
+      reactLogo,
+      typeScriptLogo,
+      materialUiLogo,
+      jsLogo,
+      htmlLogo,
+      githubLogo,
+    ],
     copy: 'Una página donde usuarios pueden ver las transacciones de su negocio filtrando por fecha u otros ítems de la transacción.',
-    button: 'Visitar',
-    image:
-      'https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max',
+    site: 'https://martincorredor.github.io/bold-dashboard/',
+    code: 'https://github.com/martincorredor/bold-dashboard.git',
+    image: boldLogo,
   },
   {
     title: 'Clon de Spotify',
-    tec: [reactLogo, gitLogo],
+    tec: [reactLogo, htmlLogo, cssLogo, figmaLogo, jsLogo, githubLogo],
     copy: 'Un clon de la aplicación web de Spotify. Se conecta a la API de Spotify para obtener tus datos y así disfrutar de la misma experiencia que tendrías con la aplicación original.',
-    button: 'Visitar',
-    image:
-      'https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max',
+    site: 'https://github.com/martincorredor/spotify-clone',
+    code: 'https://github.com/martincorredor/spotify-clone',
+    image: spotifyImg,
   },
   {
     title: 'E-commerce',
-    tec: [bootstrapLogo, cssLogo],
+    tec: [svelteLogo, jsLogo, bootstrapLogo, cssLogo, htmlLogo, gitLogo],
     copy: 'E-commerce donde cuenta con secciones de venta y compra de productos.',
-    button: 'Reservar',
-    image:
-      'https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max',
+    site: 'https://e-commerce-ac54c.web.app/',
+    code: 'https://github.com/martincorredor/svelte-e-commerce',
+    image: ecommerceImg,
   },
 ];
 
@@ -63,14 +80,22 @@ const Cards = () => {
                     key={tecIndex}
                     src={item}
                     alt={`Tecnología utilizada: ${item}`}
-                    className='projectCardTecItem'
+                    className="projectCardTecItem"
                   />
                 ))}
             </div>
             <p className="projectCardDes">{project.copy}</p>
             <div className="projectCardBtnContainer">
-              <button className="projectCardBtn">Visitar</button>
-              <button className="projectCardBtn">Ver código</button>
+              <button className="projectCardBtn">
+                <a href={project.site} target="_blank">
+                  Visitar
+                </a>
+              </button>
+              <button className="projectCardBtn">
+                <a href={project.code} target="_blank">
+                  Ver código
+                </a>
+              </button>
             </div>
           </div>
         </div>
