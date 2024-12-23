@@ -923,11 +923,6 @@ header a {
   height: 100%;
   max-height: 100%;
   min-height: 100%;
-  overflow: hidden;
-  position: relative;
-  background-color: whitesmoke;
-  cursor: context-menu;
-  border-radius: 10px;
   font-size: 0.6rem;
 }
 
@@ -949,19 +944,5 @@ header a {
 .projectCardBtn {
   font-size: inherit;
   height: 20px;
-}
-
-.projectCardBtn:hover {
-  background-color: #545050;
-  transform: scale(1.1);
-  transition: transform 0.3s;
-}
-
-.projectCardBtn a {
-  width: 100%;
-  height: 100%;
-  padding: 10px 5px;
-  color: #fff;
-  text-decoration: none;
 }
 }
